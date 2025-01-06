@@ -1,0 +1,52 @@
+.topFrame {
+    width: 100%;
+    height: 100px;
+    
+    opacity: 1;
+}
+
+.topText {
+    font-weight: bold;
+    font-size: 64px;
+    font-family: "Monocraft";
+    text-align: center;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+
+    padding-top: 10px;
+
+    @apply
+    rainbow-text
+}
+
+.topText:hover .heart {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: red ;
+
+    @apply
+    duration-500
+    text-red-500 
+    underline
+}
+
+@keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.rainbow-text {
+    background: linear-gradient(55deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 300% 300%;
+    background-clip: initial;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 1s ease infinite;
+}

@@ -1,0 +1,51 @@
+.frame {
+    background-color: white;
+    box-shadow:  0rem 1rem rgba(0, 0, 0, 0.15);
+
+    @apply
+    hover:scale-105
+    hover:bg-gray-700
+    hover:rotate-3
+    duration-1000
+}
+
+.blackBg {
+    background-color: white;
+    box-shadow:  0rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.frame:hover .text {
+    
+    @apply
+    text-stone-100
+}
+
+.frameBorder {
+
+    @apply
+    hover:outline-white
+    duration-1000
+}
+  
+.text {
+    font-weight: bold;
+    font-family: "Monocraft";
+    
+    margin: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+    max-height: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+    border-radius: 10px;
+}
